@@ -18,8 +18,6 @@ function MyForm({ onSubmit }: MyFormProps) {
     const { name, description } = form;
 
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log("E TARGET");
-        console.log(e.target);
         const { name, value } = e.target;
         setForm({
             ...form,

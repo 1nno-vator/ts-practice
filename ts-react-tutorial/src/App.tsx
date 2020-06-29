@@ -3,6 +3,7 @@ import './App.css';
 import Greetings from './Greetings';
 import Counter from './Counter';
 import MyForm from './MyForm';
+import ReducerSample from './ReducerSample';
 
 function App() {
   const clickEvent = (name: string) => {
@@ -12,7 +13,8 @@ function App() {
     console.log(form);
   }
   return (
-    <MyForm onSubmit={submitEvent}/>
+    <ReducerSample/>
+    // <MyForm onSubmit={submitEvent}/>
     // <Counter/>
     // <Greetings name={'kms'} optional={'hello'} onClick={clickEvent}/>  
   );
